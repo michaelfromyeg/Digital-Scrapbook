@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Create Entry</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"
+		integrity="sha256-KDK3xm/GlUAv2dBVItuCM6jjCCtAVrjEfsdpcuMbN5M=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"
+		integrity="sha256-a6uP+lfJTznPH4/eUqQFX3/sULwjHbfGtUjy8CWPooI=" crossorigin="anonymous"></script>
+
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsaB_cn-w_NxchGe4ZIJj3836TxCsGKX4&callback=initMap"
+		async defer>
+		</script> -->
+
+		<script src="sketch.js"></script>
+
+</head>
+
+<body>
+
+	<h1>Digital Scrapbook</h1>
+
+	<div class="nav">
+		<ul>
+			<li><a href="/logs">View scrapbook</a></li> •
+			<li><a href="/about.html">Learn more</a><li><a href="/logs"></a></li>
+		</ul>
+	</div>
+
+	<div class="set-caption">
+		<label for="caption">Choose a caption: </label>
+		<input type="text" name="caption" value="" id="caption"></input>
+	</div>
+
+	<p>Your location: <span id="latitude"></span>&deg; & <span id="longitude"></span>&deg;</p>
+
+	<div id="sketch-holder"></div>
+
+	<button name="button" onclick="onSubmit()">Submit picture</button>
+	
+	<!-- <div id="map"></div> -->
+
+	<div class="footer">
+		© Michael DeMarco 2019
+	</div>
+</body>
+
+</html>
