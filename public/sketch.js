@@ -1,12 +1,5 @@
-/*function initMap(l1,l2) {
-					map = new google.maps.Map(document.getElementById('map'), {
-          				center: {lat: l1, lng: l2},
-          				zoom: 8
-       				});
-        }*/
-
 let cam;
-function setup() {
+const setup = () => {
     noCanvas();
     cam = createCapture(VIDEO);
     cam.parent('sketch-holder');
@@ -26,11 +19,11 @@ function setup() {
     }
 }
 
-function draw() {
+const draw = () => {
     //
 }
 
-function onSubmit() {
+const onSubmit = () => {
     navigator.geolocation.getCurrentPosition(async position => {
         const lat = Math.round( position.coords.latitude * 10) / 10
         const lon = Math.round( position.coords.longitude * 10) / 10
